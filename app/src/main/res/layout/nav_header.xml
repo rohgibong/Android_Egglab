@@ -17,16 +17,20 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Android Knowledge"
-        android:textColor="@color/white"
+        android:text="김에그 (EFS 12345678)"
+        android:fontFamily="@font/gmarketmedium"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
         android:textStyle="bold"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="contact@androidknowledge.com"
-        android:textColor="@color/white"
-        android:textSize="14sp"
-        android:layout_marginBottom="16dp"/>
+        android:text="오후 2조 - 물류 분류"
+        android:fontFamily="@font/gmarketmedium"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="12dp"/>
 
 </LinearLayout>

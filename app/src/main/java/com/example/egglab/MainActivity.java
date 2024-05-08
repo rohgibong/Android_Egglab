@@ -40,19 +40,25 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
-            navigationView.setCheckedItem(R.id.nav_home);
+            navigationView.setCheckedItem(R.id.menu1);
         }
     }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        if(item.getItemId() == R.id.nav_home){
+        if(item.getItemId() == R.id.menu1){
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
-        } else if(item.getItemId() == R.id.nav_settings){
+        } else if(item.getItemId() == R.id.menu2){
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new SettingsFragment()).commit();
-        } else if(item.getItemId() == R.id.nav_share){
+        } else if(item.getItemId() == R.id.menu3){
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ShareFragment()).commit();
-        } else if(item.getItemId() == R.id.nav_about){
+        } else if(item.getItemId() == R.id.menu4){
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AboutFragment()).commit();
+        } else if(item.getItemId() == R.id.menu5){
+//            수정필요, AboutFragment로 연결되어있음.
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AboutFragment()).commit();
+        } else if(item.getItemId() == R.id.menu6){
+//            수정필요, AboutFragment로 연결되어있음.
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AboutFragment()).commit();
         } else if(item.getItemId() == R.id.nav_logout){
             Toast.makeText(this, "Logout!", Toast.LENGTH_SHORT).show();

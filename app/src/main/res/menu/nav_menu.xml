@@ -8,24 +8,40 @@
         android:checkableBehavior="single">
 
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/nav_home"
-            android:title="Home"/>
+            android:id="@+id/menu1"
+            android:title="출/퇴근 등록"
+            android:fontFamily="@font/gmarketmedium"
+            android:textStyle="bold"/>
 
         <item
-            android:id="@+id/nav_settings"
-            android:icon="@drawable/nav_settings"
-            android:title="Settings"/>
+            android:id="@+id/menu2"
+            android:title="업무 신청"
+            android:fontFamily="@font/gmarketmedium"
+            android:textStyle="bold"/>
 
         <item
-            android:id="@+id/nav_share"
-            android:icon="@drawable/nav_share"
-            android:title="Share"/>
+            android:id="@+id/menu3"
+            android:title="나의 스케줄"
+            android:fontFamily="@font/gmarketmedium"
+            android:textStyle="bold"/>
 
         <item
-            android:id="@+id/nav_about"
-            android:icon="@drawable/nav_about"
-            android:title="About Us"/>
+            android:id="@+id/menu4"
+            android:title="급여 정산 정보"
+            android:fontFamily="@font/gmarketmedium"
+            android:textStyle="bold"/>
+
+        <item
+            android:id="@+id/menu5"
+            android:title="전자근로계약서"
+            android:fontFamily="@font/gmarketmedium"
+            android:textStyle="bold"/>
+
+        <item
+            android:id="@+id/menu6"
+            android:title="특수 건강검진"
+            android:fontFamily="@font/gmarketmedium"
+            android:textStyle="bold"/>
     </group>
     <item
         android:title="">
@@ -38,5 +54,6 @@
         </menu>
 
     </item>
+
 
 </menu>
