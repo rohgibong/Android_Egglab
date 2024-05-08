@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp">
+    <TextView
+        android:id="@+id/circle1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/circle"
+        android:text="근무시간\n통계"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:fontFamily="@font/jalnan"
+        android:textSize="35sp"
+        android:paddingTop="10dp"
+        android:shadowColor="#80000000"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="5"
+        />
+
+    <TextView
+        android:id="@+id/circle2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/circle"
+        android:text="근무시간\n알림"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/circle1"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:fontFamily="@font/jalnan"
+        android:textSize="35sp"
+        android:paddingTop="10dp"
+        android:shadowColor="#80000000"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="5"
+        />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="360dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YNC Center"
+            android:textStyle="bold"
+            android:fontFamily="@font/gmarketmedium"
+            android:textSize="42sp"
+            android:textColor="@color/black"
+            android:shadowColor="#80000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="3"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="출근 "
+                android:fontFamily="@font/gmarketmedium"
+                android:textSize="23sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2024/01/01 00:00"
+                android:fontFamily="@font/gmarketlight"
+                android:textSize="23sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="퇴근 "
+                    android:fontFamily="@font/gmarketmedium"
+                    android:textSize="23sp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2024/12/31 00:00"
+                    android:fontFamily="@font/gmarketlight"
+                    android:textSize="23sp"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
