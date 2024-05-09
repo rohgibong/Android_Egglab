@@ -9,51 +9,55 @@
 
         <item
             android:id="@+id/menu1"
-            android:title="출/퇴근 등록"
-            android:fontFamily="@font/gmarketmedium"
-            android:textStyle="bold"/>
+            android:title="출/퇴근 등록"/>
 
         <item
             android:id="@+id/menu2"
-            android:title="업무 신청"
-            android:fontFamily="@font/gmarketmedium"
-            android:textStyle="bold"/>
+            android:title="업무 신청"/>
 
         <item
             android:id="@+id/menu3"
-            android:title="나의 스케줄"
-            android:fontFamily="@font/gmarketmedium"
-            android:textStyle="bold"/>
+            android:title="나의 근무"/>
 
         <item
             android:id="@+id/menu4"
-            android:title="급여 정산 정보"
-            android:fontFamily="@font/gmarketmedium"
-            android:textStyle="bold"/>
+            android:title="급여 정산 정보"/>
 
         <item
             android:id="@+id/menu5"
-            android:title="전자근로계약서"
-            android:fontFamily="@font/gmarketmedium"
-            android:textStyle="bold"/>
+            android:title="전자근로계약서"/>
 
         <item
             android:id="@+id/menu6"
-            android:title="특수 건강검진"
-            android:fontFamily="@font/gmarketmedium"
-            android:textStyle="bold"/>
+            android:title="특수 건강검진"/>
+
+        <item
+            android:id="@+id/dummy1"
+            android:title=""
+            android:enabled="false" />
+        <item
+            android:id="@+id/dummy2"
+            android:title=""
+            android:enabled="false" />
+        <item
+            android:id="@+id/dummy3"
+            android:title=""
+            android:enabled="false" />
+<!--        <item-->
+<!--            android:id="@+id/nav_logout"-->
+<!--            android:icon="@drawable/nav_logout"-->
+<!--            android:title="로그아웃"/>-->
+        <item
+            android:id="@+id/nav_login"
+            android:title="로그인" />
+        <item
+            android:id="@+id/nav_register"
+            android:title="회원가입" />
     </group>
-    <item
-        android:title="">
-
-        <menu>
-            <item
-                android:id="@+id/nav_logout"
-                android:icon="@drawable/nav_logout"
-                android:title="Logout"/>
-        </menu>
-
-    </item>
-
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/copyright"
+            android:title="ⓒ 2024 EggLab All Rights Reserved" />
+    </group>
 
 </menu>
