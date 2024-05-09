@@ -4,15 +4,84 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="50dp"
     tools:context=".LoginFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <!-- Image above the ID input field -->
+    <ImageView
+        android:id="@+id/imageAboveId"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/egglablogo"
+        android:layout_centerHorizontal="true" />  <!-- EditText와의 간격 -->
+
+    <!-- ID input field -->
+    <EditText
+        android:id="@+id/editTextId"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        android:paddingLeft="20dp"
+        android:inputType="text"
+        android:background="@color/lightgray"
+        android:fontFamily="@font/gmarketmedium"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:elevation="10dp"/>
+
+    <!-- Password input field -->
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:layout_below="@id/editTextId"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="20dp"
+        android:background="@color/lightgray"
+        android:fontFamily="@font/gmarketmedium"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:elevation="10dp"/>
+
+    <!-- Button container -->
+    <RelativeLayout
+        android:id="@+id/buttonContainer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login Fragment"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"
-        android:textColor="@color/lightgray"/>
+        android:layout_below="@id/editTextPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp">
+
+        <!-- Login button -->
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:text="로그인"
+            android:background="@color/bluebtn"
+            android:textColor="@color/white"
+            android:fontFamily="@font/gmarketmedium"
+            android:textStyle="bold"
+            android:elevation="5dp"/>
+
+        <!-- Sign Up button -->
+        <Button
+            android:id="@+id/buttonSignUp"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:text="회원가입"
+            android:layout_toEndOf="@id/buttonLogin"
+            android:layout_marginStart="20dp"
+            android:background="@color/bluebtn"
+            android:textColor="@color/white"
+            android:fontFamily="@font/gmarketmedium"
+            android:textStyle="bold"
+            android:elevation="5dp"/>
+    </RelativeLayout>
 
 </RelativeLayout>
