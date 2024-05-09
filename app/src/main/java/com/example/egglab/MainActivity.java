@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if(item.getItemId() == R.id.nav_login){
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new LoginFragment()).commit();
         } else if(item.getItemId() == R.id.nav_register){
-            Toast.makeText(this, "Register!", Toast.LENGTH_SHORT).show();
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new RegisterFragment()).commit();
         }
 //        else if(item.getItemId() == R.id.nav_logout){
 //            Toast.makeText(this, "Logout!", Toast.LENGTH_SHORT).show();
